@@ -1,8 +1,24 @@
 {
   "name": "plex-bridge-homebridge-http-webhooks",
   "version": "0.0.3",
+  "description": "node.js server to catch plex webhook, filter if it is a specific plex player and send webhook to home automation.",
+  "author": "lzillio adopted by ramsnerm",
+  "license": "MIT",
+  "main": "index.js",
+  
+  "keywords": [
+    "plex",
+    "home control"
+  ],
+  
   "private": true,
   "scripts": {},
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramsnerm/plex-bridge-homebridge-http-webhooks.git"
+  },
+  
   "dependencies": {
     "body-parser": "^1.16.0",
     "debug": "^2.6.0",
