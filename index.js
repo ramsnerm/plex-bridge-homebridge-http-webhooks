@@ -50,14 +50,14 @@ app.post('/', upload.single('thumb'), function (req, res, next) {
   };
 
   if (payload.event == 'media.play' || payload.event == 'media.resume') {
-    console.log(`Opening ${process.env.ACCESSORY} contact sensor.`);
+    console.log(`Opening ${process.env.ACCESSORY} occupancy sensor.`);
     options.qs = {
       state: true,
       accessoryId: process.env.ACCESSORY
     };
     request(options);
   } else if (payload.event == 'media.pause' || payload.event == 'media.stop') {
-    console.log(`Closing ${process.env.ACCESSORY} contact sensor.`);
+    console.log(`Closing ${process.env.ACCESSORY} occupancy sensor.`);
     options.qs = {
       state: false,
       accessoryId: process.env.ACCESSORY
